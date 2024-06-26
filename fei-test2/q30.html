@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Layout</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+    }
+    .box {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: 10px;
+    }
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+=    <div class="row">
+      <div class="col-12">
+        <div class="box" style="height: 100px;">1</div>
+      </div>
+    </div>
+   <div class="row">
+      <div class="col-md-2">
+        <div class="box" style="height: 100px;">2</div>
+      </div>
+      <div class="col-md-10">
+        <div class="row">
+        
+            <div class="col-md-6">
+                <div class="box" style="height: 150px;">1</div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box" style="height: 130px;">4</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box" style="height: 130px;">8</div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="box" style="height: 150px;">5</div>
+                      </div>
+                </div>
+            </div>
+          <div class="col-md-3">
+            <div class="box" style="height: 300px;">2</div>
+            <div class="col-md-12">
+                <div class="box" style="height: 150px; margin-top: 20px;">5</div>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box" style="height: 150px;">3</div>
+            <div class="col-md-12">
+                <div class="box" style="height: 250px;">7</div>
+              </div>
+              <div class="col-md-12">
+                <div class="box" style="height: 250px;">10</div>
+              </div>
+          </div>
+          
+        
+        
+          <div class="col-md-12">
+            <div class="box" style="height: 100px;">6</div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="box" style="height: 100px;">4</div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
